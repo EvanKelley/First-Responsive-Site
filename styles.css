@@ -1,3 +1,82 @@
-.body {
-  background-color: red;
+.container{
+  background-color: white;
+  color: white;
+  display: grid;
+  margin: 4px;
+}
+@media (min-width: 576px) {
+  .container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "welcome welcome welcome"
+      "title-1 title-2 title-3";
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 575px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "welcome"
+      "title-1"
+      "title-2"
+      "title-3";
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+.welcome{
+  background-color: #F6CD5D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: welcome;
+}
+h1{
+  color: white;
+}
+.title-1{
+  background-color: #344972;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-area: title-1;
+}
+.title-2{
+  background-color: #344972;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-area: title-2;
+}
+.title-3{
+  background-color: #344972;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-area: title-3;
+}
+.color-1{
+  height: 30px;
+  width: 150px;
+  background-color: #E25D6A;
+}
+.color-2{
+  height: 30px;
+  width: 150px;
+  background-color: #EF9757;
+}
+.color-3{
+  height: 30px;
+  width: 150px;
+  background-color: #F6CD5D
 }
