@@ -3,6 +3,7 @@
   color: white;
   display: grid;
   margin: 4px;
+  font-family: 'Noto Serif', serif;
 }
 @media (min-width: 576px) {
   .container {
@@ -10,6 +11,12 @@
     grid-template-areas:
       "welcome welcome welcome"
       "title-1 title-2 title-3";
+  }
+  .welcome{
+    background-color: #F6CD5D;
+  }
+  .title-1, .title-2, .title-3{
+    background-color: #344972;    
   }
   nav ul {
     display: flex;
@@ -26,57 +33,57 @@
       "title-2"
       "title-3";
   }
+  .welcome{
+    background-color: #E25D6A;
+  }
+  .title-1, .title-2, .title-3{
+    background-color: #579B9B;    
+  }
   nav ul {
     display: flex;
     justify-content: space-evenly;
   }
 }
 .welcome{
-  background-color: #F6CD5D;
   display: flex;
   align-items: center;
   justify-content: center;
   grid-area: welcome;
 }
 h1{
-  color: white;
+  font-size: 45px;
 }
-.title-1{
-  background-color: #344972;
+.title-1, .title-2, .title-3{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 20px;
+}
+.title-1{
   grid-area: title-1;
 }
 .title-2{
-  background-color: #344972;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   grid-area: title-2;
 }
 .title-3{
-  background-color: #344972;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   grid-area: title-3;
 }
+h3{
+  font-size: 30px;
+}
 .color-1{
-  height: 30px;
-  width: 150px;
+  height: 40px;
+  width: 200px;
   background-color: #E25D6A;
 }
 .color-2{
-  height: 30px;
-  width: 150px;
+  height: 40px;
+  width: 200px;
   background-color: #EF9757;
 }
 .color-3{
-  height: 30px;
-  width: 150px;
+  height: 40px;
+  width: 200px;
   background-color: #F6CD5D
 }
